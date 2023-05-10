@@ -1,0 +1,21 @@
+meta:
+  name: world-1-local
+  description: 1 localhost.
+  #release: x
+
+networks:
+  default:
+    targets: local-0
+
+templates:
+  local:
+    targets: local-0
+    ncores: 2
+    memory: 16G
+    # no networking required
+    scheme: local
+    host: localhost
+    fshome-id: local
+    fsdata-ids: local
+    # no ssl required
+    #ssl-profile: default
